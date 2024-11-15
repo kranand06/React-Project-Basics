@@ -24,6 +24,12 @@ function Generator() {
         initialise();
     }, [len, num, char])
 
+
+    const copy = () => {
+        window.navigator.clipboard.writeText(pass)
+    }
+
+
     return (
         <>
             <input
@@ -32,6 +38,7 @@ function Generator() {
                 style={{ width: "500px", height: "50px", fontSize: "40px" }}
                 readOnly
             />
+            <button onClick={copy}>Copy</button>
             <br />
             <input type="range"
                 min={3}
