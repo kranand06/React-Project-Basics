@@ -11,11 +11,6 @@ function Weather() {
 
 
 
-    //function to update state variable and rerender the page
-
-    const handler = (e) => {
-        setCity(e.target.value)
-    }
 
     const search = async () => {
         try {
@@ -34,15 +29,10 @@ function Weather() {
     }, [])
 
 
-    const keypress = (e) => {
-        if (e.key === "Enter")
-            search();
-    }
-
     return (
         <div className="counter">
 
-            <Searchbox city={city} handler={handler} search={search}/>
+            <Searchbox city={city} handler={ (e) =>setCity(e.target.value) } search={search}/>
 
             <Print temp={weat} />
 

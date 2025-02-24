@@ -1,9 +1,11 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import './index.css'
+
 import { createBrowserRouter } from 'react-router-dom'
-import Page from './page.jsx'
 import { RouterProvider } from 'react-router-dom'
+
+import Page from './page.jsx'
 import Home from './components/home.jsx'
 import About from './components/about.jsx'
 import Contact from './components/contact.jsx'

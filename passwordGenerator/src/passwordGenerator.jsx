@@ -10,10 +10,15 @@ function Generator() {
     const [pass, setPass] = useState("");
 
 
-    const passGen = useCallback(() => {
+    // const passGen = useCallback(() => {
+    //     let p = genFn(len, num, char);
+    //     setPass(p);
+    // }, [len, num, char])
+
+    const passGen = () => {
         let p = genFn(len, num, char);
         setPass(p);
-    }, [len, num, char])
+    }
 
 
     useEffect(() => {

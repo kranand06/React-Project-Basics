@@ -7,7 +7,7 @@ function Print(d) {
     
   return (
     <>
-    <h3>Temperature : </h3>
+    <h3 >Temperature : </h3>
     <h1>{Math.round(data.temp)}   {celc}</h1>
     </>
   )
